@@ -44,7 +44,7 @@ Use a [preset config](#preset-configs) or configure each rules in `package.json`
 ## Rules
 
 <!-- Do not manually modify this list. Run: `npm run fix:eslint-docs` -->
-<!-- begin rules list -->
+<!-- begin auto-generated rules list -->
 
 ✅ Enabled in the `recommended` [configuration](https://github.com/sindresorhus/eslint-plugin-unicorn#preset-configs).\
 🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).\
@@ -159,7 +159,7 @@ Use a [preset config](#preset-configs) or configure each rules in `package.json`
 | [text-encoding-identifier-case](docs/rules/text-encoding-identifier-case.md)                                                                                                                                           | Enforce consistent case for text encoding identifiers.                                                                                                                                                            | ✅  | 🔧  | 💡  |
 | [throw-new-error](docs/rules/throw-new-error.md)                                                                                                                                                                       | Require `new` when throwing an error.                                                                                                                                                                             | ✅  | 🔧  |     |
 
-<!-- end rules list -->
+<!-- end auto-generated rules list -->
 
 ### Deprecated Rules
 
