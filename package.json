@@ -16,7 +16,7 @@
 	"scripts": {
 		"create-rule": "node ./scripts/create-rule.mjs && npm run fix:eslint-docs",
 		"fix": "run-p --continue-on-error fix:*",
-		"fix:eslint-docs": "eslint-doc-generator --ignore-deprecated-rules --ignore-config all --rule-doc-title-format desc --url-configs \"https://github.com/sindresorhus/eslint-plugin-unicorn#preset-configs\"",
+		"fix:eslint-docs": "eslint-doc-generator",
 		"fix:js": "npm run lint:js -- --fix",
 		"fix:md": "npm run lint:md -- --fix",
 		"integration": "node ./test/integration/test.mjs",
@@ -29,6 +29,12 @@
 		"smoke": "eslint-remote-tester --config ./test/smoke/eslint-remote-tester.config.js",
 		"test": "npm-run-all --continue-on-error lint test:*",
 		"test:js": "c8 ava"
+	},
+	"eslint-doc-generator": {
+		"ignoreDeprecatedRules": true,
+		"ignoreConfig": ["all"],
+		"ruleDocTitleFormat": "desc",
+		"urlConfigs": "https://github.com/sindresorhus/eslint-plugin-unicorn#preset-configs"
 	},
 	"files": [
 		"index.js",
